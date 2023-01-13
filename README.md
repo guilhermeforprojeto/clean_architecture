@@ -1,4 +1,4 @@
-# Clean Architecture
+## Clean Architecture
 
 ## :warning: Under development ...
 
@@ -15,7 +15,7 @@
 <hr>
 </hr>
 
-## Clean Architecture
+<h1 style="font-family: 'Sans';">  Clean Architecture </h1>
 
 ![#](https://placehold.co/380x1/ffa500/ffa500.png)
 

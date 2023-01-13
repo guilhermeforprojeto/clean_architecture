@@ -21,6 +21,9 @@
 
 ## ENTITIES
 
+-- Regras de neǵocio consolidadas
+-- Modelagem de dados
+
 ![#](https://placehold.co/380x1/f87a58/f87a58.png)
 
 ## USE CASES

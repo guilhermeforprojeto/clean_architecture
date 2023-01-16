@@ -21,7 +21,9 @@
 
 ## ENTITIES
 
--- Regras de neǵocio consolidadas
+- Regras de neǵocio consolidadas
+- - Arquivo <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/route.entity.ts"> `/src/route.entity.ts` </a>
+
 -- Modelagem de dados
 
 ![#](https://placehold.co/380x1/f87a58/f87a58.png)

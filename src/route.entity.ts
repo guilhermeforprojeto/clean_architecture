@@ -42,6 +42,7 @@ export class Route {
   get startPosition() {
     return this.props.startPosition
   }
+
   private set startPosition(value: LatLng) {
     this.props.startPosition = value
 
@@ -49,10 +50,10 @@ export class Route {
 
 
   get endPosition() {
-    return this.props.startPosition
+    return this.props.endPosition
   }
   private set endPosition(value: LatLng) {
-    this.props.startPosition = value
+    this.props.endPosition = value
 
   }
 

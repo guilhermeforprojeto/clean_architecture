@@ -22,9 +22,10 @@
 ## ENTITIES
 
 - Regras de neǵocio consolidadas
-- - Arquivo <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/route.entity.ts"> `/src/route.entity.ts` </a>
+- - Arquivo com a entidade <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/route.entity.ts"> `/src/route.entity.ts` </a><p> Nele fica as as regras de negócio, validações</p>
+- - - <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/oute.entity.spec.tsts"> `/src/route.entity.spec.ts` </a> <p>Todas regras devem ter testes unitários para ser seguro</p>
 
--- Modelagem de dados
+- Modelagem de dados
 
 ![#](https://placehold.co/380x1/f87a58/f87a58.png)
 

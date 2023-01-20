@@ -18,11 +18,12 @@ export class Route {
   }
   updateTitle(title: string) {
     this.title = title
+    // mudar para maiusculo
+    // valor alguns caracteres
+    // validações 
+    // Vulgo as regras de nedógio
   }
-  // mudar para maiusculo
-  // valor alguns caracteres
-  // validações 
-  // Vulgo as regras de nedógio
+
   updatePosition(startPosition: LatLng, endPosition: LatLng) {
     this.startPosition = startPosition;
     this.endPosition = endPosition;
@@ -31,6 +32,15 @@ export class Route {
     // validações 
     // Vulgo as regras de nedógio
   }
+
+  updatePoints(points: LatLng[]) {
+    this.points = points;
+    // mudar para maiusculo
+    // valor alguns caracteres
+    // validações 
+    // Vulgo as regras de nedógio
+  }
+
   get title() {
     return this.props.title
   }
@@ -54,8 +64,14 @@ export class Route {
   }
   private set endPosition(value: LatLng) {
     this.props.endPosition = value
-
   }
 
+
+  get points() {
+    return this.props.points
+  }
+  private set points(value: LatLng[]) {
+    this.props.points = value
+  }
 
 }

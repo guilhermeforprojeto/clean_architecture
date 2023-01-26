@@ -38,6 +38,8 @@
 
 ## INFRA, PRESENTERS & REPOSITORIES
 
+- - Arquivo com a infra <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/infra/http/express/index.ts"> `/src/infra/http/express/index.ts` </a><p> A infra, aqui onde vamos usar para requisitar e receber dados da da entidade usando os casos de uso</p>
+
 ![#](https://placehold.co/380x1/c6e2ff/c6e2ff.png)
 
 ## UI, DB & WEB

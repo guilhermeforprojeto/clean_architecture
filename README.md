@@ -1,6 +1,6 @@
 ## Clean Architecture
 
-## :warning: Under development ...
+## :warning: Under development...
 
 <p align="center">
 <img  width=422 src="https://raw.githubusercontent.com/guilhermeforprojeto/clean_architecture/main/public/img/CleanArchitecture.jpg" ></img>
@@ -22,8 +22,8 @@
 ## ENTITIES
 
 - Regras de neǵocio consolidadas
-- - Arquivo com a entidade <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/route.entity.ts"> `/src/route.entity.ts` </a><p> Nele fica as as regras de negócio, validações</p>
-- - - <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/oute.entity.spec.tsts"> `/src/route.entity.spec.ts` </a> <p>Todas regras devem ter testes unitários para ser seguro</p>
+- - Arquivo com a entidade <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/domain/route.entity.ts"> `/src/domain/route.entity.ts` </a><p> As as regras de negócio, validações</p>
+- - - <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/domain/route.entity.spec.ts"> `/src/domain/route.entity.spec.ts` </a> <p>Todas regras devem ter testes unitários para ser seguro</p>
 
 - Modelagem de dados
 
@@ -31,9 +31,12 @@
 
 ## USE CASES
 
+-
+- - Arquivo com caso de uso <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/application/create_route.use_case.ts"> `/src/application/create_route.use_case.ts` </a><p> Os casos de uso, por exemplo os tipos de input e output, obrigado informa a entrada de alguns dados cruciais para o funcionamento</p>
+
 ![#](https://placehold.co/380x1/7ee23b/7ee23b.png)
 
-## PRESENTERS & REPOSITORIES
+## INFRA, PRESENTERS & REPOSITORIES
 
 ![#](https://placehold.co/380x1/c6e2ff/c6e2ff.png)
 

@@ -66,6 +66,8 @@ O padrão MVC foi implementado já em 1974 no projeto Smalltalk. Tem sido dado, 
 ## INFRA, PRESENTERS & REPOSITORIES
 
 - Arquivo com a infra <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/infra/http/express/index.ts"> `/src/infra/http/express/index.ts` </a><p> A infra, aqui onde vamos usar para passar os dados da requisição da entidade usando os casos de uso</p><p>Utlizamos a extenção `REST Client ->/ @ext:humao.rest-client` para testar o POST na aplicação.</p>
+- Expres.js
+- - Framework Node, usado para habilitar uma aplicação web e usar a nossa aplicação.<p>Com ele fizemos `GET` & `POST` nas rotas. Arquivo com fontes <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/infra/http/express/index.ts" >aqui</a>
 
 </p>
 <br>

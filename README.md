@@ -53,11 +53,11 @@ O padrão MVC foi implementado já em 1974 no projeto Smalltalk. Tem sido dado, 
 ## USE CASES
 
 - Arquivo com caso de uso <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/application/create_route.use_case.ts"> `/src/application/create_route.use_case.ts` </a><p> O caso de uso, por exemplo os tipos de input e output, obriga informa a entrada de alguns dados cruciais para o funcionamento</p><p>`CreateRouteInput` nesta aplicação é a porta do caso de uso The Pattern: Ports and Adapters (‘’Object Structural’’) como diz no <a href="https://alistair.cockburn.us/hexagonal-architecture/">link.</a> Desta forma a `INFRA, PRESENTERS & REPOSITORIES` vai precisar se adpatar aos casos de uso e nunca o inverso. <p>Permitir que um aplicativo seja igualmente conduzido por usuários, programas, scripts automatizados de teste ou em lote, e seja desenvolvido e testado isoladamente de seus eventuais dispositivos e bancos de dados de tempo de execução.
+<br>
+<br>
+<img width="190" src="https://alistair.cockburn.us/wp-content/uploads/2018/02/Hexagonal-architecture-pic-1-to-4-socket.jpg" ></img>
 </p>
 </p>
-
-- - <img width="190" src="https://alistair.cockburn.us/wp-content/uploads/2018/02/Hexagonal-architecture-pic-1-to-4-socket.jpg" ></img>
-  <br>
   <hr>
   <br>
 

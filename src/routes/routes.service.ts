@@ -1,15 +1,27 @@
 import { Injectable } from '@nestjs/common';
+import { CreateRouteUseCase } from '../@core/application/create_route.use_case';
+import { ListAllRoutesUseCase } from '../@core/application/list_all_routes.use_case';
 import { CreateRouteDto } from './dto/create-route.dto';
 import { UpdateRouteDto } from './dto/update-route.dto';
 
 @Injectable()
 export class RoutesService {
+
+
+  constructor(
+    private createUseCase: CreateRouteUseCase,
+    private listAllUseCase: ListAllRoutesUseCase
+  ) { }
+
+
   create(createRouteDto: CreateRouteDto) {
-    return 'This action adds a new route';
+    return this.createUseCase.execute(createRouteDto);
+
   }
 
   findAll() {
-    return `This action returns all routes`;
+    return this.listAllUseCase.execute();
+
   }
 
   findOne(id: number) {

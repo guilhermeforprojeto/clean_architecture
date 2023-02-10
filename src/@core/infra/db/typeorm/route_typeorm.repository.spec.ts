@@ -10,7 +10,7 @@ describe('RouteTypeOrmRepository Test', () => {
       type: 'sqlite',
       database: ':memory',
       synchronize: true,
-      logging: true,
+      logging: false,
       entities: [RouteSchema]
     })
     await dataSource.initialize();

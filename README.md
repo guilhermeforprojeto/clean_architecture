@@ -13,13 +13,16 @@
 - - `npx tsc --init`
 
 <hr>
-</hr>
+
+- Tecnologias usadas no projeto
+- - NodeJS | TS | ExpressJS | NestJS | TypeORM
+  </hr>
 
 <h1 style="font-family: 'Sans';"> As 4 Camadas da Clean Architecture </h1>
 
 <h3>Na Arquitetura limpa temos portas e adaptadores </h3>
 <details>
-EX: Neste projeto o /src/infra/http/express/index.ts é o nosso adpatador e o src/application/...     são nossas portas.
+EX: Neste projeto o /src/@core/infra/http/express/index.ts é o nosso adpatador e o src/application/...     são nossas portas.
 <summary><a>Ler mais</a>
 </summary>
 <p>Padrões relacionados</p> 
@@ -38,8 +41,8 @@ O padrão MVC foi implementado já em 1974 no projeto Smalltalk. Tem sido dado, 
 ## ENTITIES
 
 - Regras de neǵocio consolidadas
-- - Arquivo com a entidade <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/domain/route.entity.ts"> `/src/domain/route.entity.ts` </a><p> As as regras de negócio, validações</p>
-- - - <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/domain/route.entity.spec.ts"> `/src/domain/route.entity.spec.ts` </a> <p>Todas regras devem ter testes unitários para ser seguro</p>
+- - Arquivo com a entidade <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/domain/route.entity.ts"> `/src/@core/domain/route.entity.ts` </a><p> As as regras de negócio, validações</p>
+- - - <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/domain/route.entity.spec.ts"> `/src/@core/domain/route.entity.spec.ts` </a> <p>Todas regras devem ter testes unitários para ser seguro</p>
 
 - Modelagem de dados
 
@@ -52,7 +55,7 @@ O padrão MVC foi implementado já em 1974 no projeto Smalltalk. Tem sido dado, 
 
 ## USE CASES
 
-- Arquivo com caso de uso <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/application/create_route.use_case.ts"> `/src/application/create_route.use_case.ts` </a><p> O caso de uso, por exemplo os tipos de input e output, obriga informa a entrada de alguns dados cruciais para o funcionamento</p><p>`CreateRouteInput` nesta aplicação é a porta do caso de uso The Pattern: Ports and Adapters (‘’Object Structural’’) como diz no <a href="https://alistair.cockburn.us/hexagonal-architecture/">link.</a> Desta forma a `INFRA, PRESENTERS & REPOSITORIES` vai precisar se adpatar aos casos de uso e nunca o inverso. <p>Permitir que um aplicativo seja igualmente conduzido por usuários, programas, scripts automatizados de teste ou em lote, e seja desenvolvido e testado isoladamente de seus eventuais dispositivos e bancos de dados de tempo de execução.
+- Arquivo com caso de uso <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/application/create_route.use_case.ts"> `/src/@core/application/create_route.use_case.ts` </a><p> O caso de uso, por exemplo os tipos de input e output, obriga informa a entrada de alguns dados cruciais para o funcionamento</p><p>`CreateRouteInput` nesta aplicação é a porta do caso de uso The Pattern: Ports and Adapters (‘’Object Structural’’) como diz no <a href="https://alistair.cockburn.us/hexagonal-architecture/">link.</a> Desta forma a `INFRA, PRESENTERS & REPOSITORIES` vai precisar se adpatar aos casos de uso e nunca o inverso. <p>Permitir que um aplicativo seja igualmente conduzido por usuários, programas, scripts automatizados de teste ou em lote, e seja desenvolvido e testado isoladamente de seus eventuais dispositivos e bancos de dados de tempo de execução.
 <br>
 <br>
 <img width="190" src="https://alistair.cockburn.us/wp-content/uploads/2018/02/Hexagonal-architecture-pic-1-to-4-socket.jpg" ></img>
@@ -65,14 +68,18 @@ O padrão MVC foi implementado já em 1974 no projeto Smalltalk. Tem sido dado, 
 
 ## INFRA, PRESENTERS & REPOSITORIES
 
-- Arquivo com a infra <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/infra/http/express/index.ts"> `/src/infra/http/express/index.ts` </a><p> A infra, aqui onde vamos usar para passar os dados da requisição da entidade usando os casos de uso</p><p>Utlizamos a extenção `REST Client ->/ @ext:humao.rest-client` para testar o POST na aplicação.</p>
+- Arquivo com a infra <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/infra/http/express/index.ts"> `/src/@core/infra/http/express/index.ts` </a><p> A infra, aqui onde vamos usar para passar os dados da requisição da entidade usando os casos de uso</p><p>Utlizamos a extenção `REST Client ->/ @ext:humao.rest-client` para testar o POST na aplicação.</p>
 - Expres.js
-- - Framework Node, usado para habilitar uma aplicação web e usar a nossa aplicação.<p>Com ele fizemos `GET` & `POST` nas rotas. Arquivo com fontes <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/infra/http/express/index.ts" >aqui</a>
+- - Framework Node, usado para habilitar uma aplicação web e usar a nossa aplicação.<p>Com ele fizemos `GET` & `POST` nas rotas. Arquivo com fontes <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/infra/http/express/index.ts" >aqui</a>
 
 </p>
-<br>
-<hr>
-<br>
+
+- NestJS
+- - NestJS é um framework Node.js destinado ao desenvolvimento de aplicativos do lado do servidor. NestJS faz uso do framework Express.js, sendo também compatível com o Fastify. Sua arquitetura é fortemente inspirada no Angular.
+
+ <br>
+    <hr>
+    <br>
 
 ![#](https://placehold.co/380x1/c6e2ff/c6e2ff.png)
 

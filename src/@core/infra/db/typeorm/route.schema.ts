@@ -1,6 +1,5 @@
-import { title } from "process";
-import { Entity, EntitySchema } from "typeorm";
-import { Route } from "../../../domain/route.entity";
+import { EntitySchema } from 'typeorm';
+import { Route } from '../../../domain/route.entity';
 
 export const RouteSchema = new EntitySchema<Route>({
   name: 'route',
@@ -8,11 +7,11 @@ export const RouteSchema = new EntitySchema<Route>({
   columns: {
     id: {
       type: 'uuid',
-      primary: true
+      primary: true,
     },
     title: {
       type: String,
-      length: 255
+      length: 255,
     },
     startPosition: {
       type: 'simple-json'
@@ -24,4 +23,4 @@ export const RouteSchema = new EntitySchema<Route>({
       type: 'simple-json'
     },
   }
-})
+});

@@ -5,8 +5,11 @@ import { RouteInMemoryRepository } from '../@core/infra/db/in-memory/route_in_me
 import { CreateRouteUseCase } from '../@core/application/create_route.use_case';
 import { RouteRepositoryInterface } from '../@core/domain/route.repository';
 import { ListAllRoutesUseCase } from '../@core/application/list_all_routes.use_case';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { RouteSchema } from '../@core/infra/db/typeorm/route.schema';
 
 @Module({
+  imports: [TypeOrmModule.forFeature([RouteSchema])],
   controllers: [RoutesController],
   providers: [
     RoutesService,

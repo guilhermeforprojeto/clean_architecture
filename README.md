@@ -8,9 +8,12 @@
 - Exemplo de arquitetura limpa seguindo os conceitho do livro Clean Architecture do autor <a href="https://en.wikipedia.org/wiki/Robert_C._Martin"> Robert Cecil Martin.</a>
 </p>
 
-- Execução desta aplicação:
-- - `npm install typescript --salve-dev`
-- - `npx tsc --init`
+- Instalação[dentro do diretorio via terminal]:
+- - `npm install`
+- Execução desta aplicação [dentro do diretorio via terminal]:
+- - Colocar o Nest.js em execução execute no terminal: `npm start dev`
+- - Com isso você tera o backend Nest Rodando e então podera acessar http://localhost:3000/ e ver a tela inicial, ou http://localhost:3000/routes para visualizar as rotas
+- - Esse endpoint criado responde a `GET` e `POST` então podemos usar algumas ferramentas para ver ou incluir dados. Usamos aqui o <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/api.http"> ./api.http </a> que com a <a href="https://marketplace.visualstudio.com/items?itemName=humao.rest-client&ssr=false#overview"> extenção do VS code </a> que permite fazer `GET/POST` ao abrir o <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/api.http"> ./api.http </a>
 
 <hr>
 

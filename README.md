@@ -4,16 +4,30 @@
 
 <p align="center">
 <img  width=422 src="https://raw.githubusercontent.com/guilhermeforprojeto/clean_architecture/main/public/img/CleanArchitecture.jpg" ></img>
+<div style="display: inline_block" align="center" >
 
-- Exemplo de arquitetura limpa seguindo os conceitho do livro Clean Architecture do autor <a href="https://en.wikipedia.org/wiki/Robert_C._Martin"> Robert Cecil Martin.</a>
+<img   height="80"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+<img height="70" width="70"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
+
+<img alt="Guilherme-Ts" height="60" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"></img>
+<img  height="60"  src="https://avatars.githubusercontent.com/u/20165699?s=200&v=4"></img><img height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" />
+
+</div>
+
+- Exemplo de arquitetura limpa seguindo os conceito do livro Clean Architecture do autor <a href="https://en.wikipedia.org/wiki/Robert_C._Martin"> Robert Cecil Martin.</a>
 </p>
 
-- Instalação[dentro do diretorio via terminal]:
-- - `npm install`
-- Execução desta aplicação [dentro do diretorio via terminal]:
-- - Colocar o Nest.js em execução execute no terminal: `npm start dev`
-- - Com isso você tera o backend Nest Rodando e então podera acessar http://localhost:3000/ e ver a tela inicial, ou http://localhost:3000/routes para visualizar as rotas
-- - Esse endpoint criado responde a `GET` e `POST` então podemos usar algumas ferramentas para ver ou incluir dados. Usamos aqui o <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/api.http"> ./api.http </a> que com a <a href="https://marketplace.visualstudio.com/items?itemName=humao.rest-client&ssr=false#overview"> extenção do VS code </a> que permite fazer `GET/POST` ao abrir o <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/api.http"> ./api.http </a>
+- Requisitos
+- - <a href="https://nodejs.org/en/download/">Nodejs </a>
+- - Conexão com internet
+
+- Instalação[dentro do diretório via terminal]:
+- - Copie/Baixe este respositorio GitHub para sua maquina.
+- - extecute `npm install` via terminal no diretório do projeto
+- Execução desta aplicação [dentro do diretório via terminal]:
+- - Colocar o Nest.js em execução execute no terminal: `npm run start:dev`
+- - Com isso você terá o backend Nest Rodando e então podera acessar http://localhost:3000/ e ver a tela inicial, http://localhost:3000/route para visualizar as rotas e http://localhost:3000/routes para ver todas
+- - Esse endpoint criado responde a `GET` e `POST` então podemos usar algumas ferramentas para ver ou incluir dados. Usamos aqui o <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/api.http"> ./api.http </a> que com a <a href="https://marketplace.visualstudio.com/items?itemName=humao.rest-client&ssr=false#overview"> extensão do VS code </a> que permite fazer `GET/POST` ao abrir o arquivo <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/api.http"> ./api.http </a> <p> Vemos aqui a baixo como fazer a requisição REST API </p><p> <img width="500"  src="https://raw.githubusercontent.com/guilhermeforprojeto/clean_architecture/main/public/img/api%20_http.jpeg" ></img></p>
 
 <hr>
 
@@ -33,7 +47,7 @@ EX: Neste projeto o /src/@core/infra/http/express/index.ts é o nosso adpatador 
 O livro ''Design Patterns'' contém uma descrição do padrão genérico ''Adapter'': "Converter a interface de uma classe em outra interface que os clientes esperam". O padrão de portas e adaptadores é um uso particular do padrão ''Adaptador''.
 <p></p> 
 Model-View-Controller:<p></p> (Controladora de visualização de modelo)
-O padrão MVC foi implementado já em 1974 no projeto Smalltalk. Tem sido dado, ao longo dos anos, muitas variações, como Model-Interactor e Model-View-Presenter. Cada um deles implementa a ideia de portas e adaptadores nas portas primárias, não nas portas secundárias.
+O padrão MVC foi implementado já em 1974 no projeto Smalltalk. Tem sido dado, ao longo dos anos, muitas variações, como Model-Interáctor e Model-View-Presenter. Cada um deles implementa a ideia de portas e adaptadores nas portas primárias, não nas portas secundárias.
 
 <a href="https://alistair.cockburn.us/hexagonal-architecture/">Fonte</a>
 
@@ -71,7 +85,7 @@ O padrão MVC foi implementado já em 1974 no projeto Smalltalk. Tem sido dado, 
 
 ## INFRA, PRESENTERS & REPOSITORIES
 
-- Arquivo com a infra <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/infra/http/express/index.ts"> `/src/@core/infra/http/express/index.ts` </a><p> A infra, aqui onde vamos usar para passar os dados da requisição da entidade usando os casos de uso</p><p>Utlizamos a extenção `REST Client ->/ @ext:humao.rest-client` para testar o POST na aplicação.</p>
+- Arquivo com a infra <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/infra/http/express/index.ts"> `/src/@core/infra/http/express/index.ts` </a><p> A infra, aqui onde vamos usar para passar os dados da requisição da entidade usando os casos de uso</p><p>Utlizamos a extensão `REST Client ->/ @ext:humao.rest-client` para testar o POST na aplicação.</p>
 - Expres.js
 - - Framework Node, usado para habilitar uma aplicação web e usar a nossa aplicação.<p>Com ele fizemos `GET` & `POST` nas rotas. Arquivo com fontes <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/infra/http/express/index.ts" >aqui</a>
 

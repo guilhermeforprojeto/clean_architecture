@@ -22,8 +22,8 @@
 - - Conexão com internet
 
 - Instalação[dentro do diretório via terminal]:
-- - Copie/Baixe este respositorio GitHub para sua maquina.
-- - extecute `npm install` via terminal no diretório do projeto
+- - Copie/Baixe este respositorio GitHub para sua máquina.
+- - Extecute `npm install` via terminal no diretório do projeto
 - Execução desta aplicação [dentro do diretório via terminal]:
 - - Colocar o Nest.js em execução execute no terminal: `npm run start:dev`
 - - Com isso você terá o backend Nest Rodando e então podera acessar http://localhost:3000/ e ver a tela inicial, http://localhost:3000/route para visualizar as rotas e http://localhost:3000/routes para ver todas

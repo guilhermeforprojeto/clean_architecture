@@ -6,8 +6,12 @@
 <img  width=422 src="https://raw.githubusercontent.com/guilhermeforprojeto/clean_architecture/main/public/img/CleanArchitecture.jpg" ></img>
 <div style="display: inline_block" align="center" >
 
-</div>
+## Applied Technologies
 
+<img width=422 src="https://raw.githubusercontent.com/guilhermeforprojeto/clean_architecture/main/public/img/readme.mg-recs.png">
+</div>
+<br>
+<br>
 - Exemplo de arquitetura limpa seguindo os conceito do livro Clean Architecture do autor <a href="https://en.wikipedia.org/wiki/Robert_C._Martin"> Robert Cecil Martin.</a>
 </p>
 

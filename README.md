@@ -6,12 +6,6 @@
 <img  width=422 src="https://raw.githubusercontent.com/guilhermeforprojeto/clean_architecture/main/public/img/CleanArchitecture.jpg" ></img>
 <div style="display: inline_block" align="center" >
 
-<img   height="80"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
-<img height="70" width="70"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
-
-<img alt="Guilherme-Ts" height="60" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"></img>
-<img  height="60"  src="https://avatars.githubusercontent.com/u/20165699?s=200&v=4"></img><img height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" />
-
 </div>
 
 - Exemplo de arquitetura limpa seguindo os conceito do livro Clean Architecture do autor <a href="https://en.wikipedia.org/wiki/Robert_C._Martin"> Robert Cecil Martin.</a>
@@ -72,7 +66,7 @@ O padrão MVC foi implementado já em 1974 no projeto Smalltalk. Tem sido dado, 
 
 ## USE CASES
 
-- Arquivo com caso de uso <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/application/create_route.use_case.ts"> `/src/@core/application/create_route.use_case.ts` </a><p> O caso de uso, por exemplo os tipos de input e output, obriga informa a entrada de alguns dados cruciais para o funcionamento</p><p>`CreateRouteInput` nesta aplicação é a porta do caso de uso The Pattern: Ports and Adapters (‘’Object Structural’’) como diz no <a href="https://alistair.cockburn.us/hexagonal-architecture/">link.</a> Desta forma a `INFRA, PRESENTERS & REPOSITORIES` vai precisar se adpatar aos casos de uso e nunca o inverso. <p>Permitir que um aplicativo seja igualmente conduzido por usuários, programas, scripts automatizados de teste ou em lote, e seja desenvolvido e testado isoladamente de seus eventuais dispositivos e bancos de dados de tempo de execução.
+- Arquivo com caso de uso [/src/@core/application/create_route.use_case.ts](https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/application/create_route.use_case.ts) <p> O caso de uso, por exemplo os tipos de input e output, obriga informa a entrada de alguns dados cruciais para o funcionamento</p><p>`CreateRouteInput` nesta aplicação é a porta do caso de uso The Pattern: Ports and Adapters (‘’Object Structural’’) como diz no <a href="https://alistair.cockburn.us/hexagonal-architecture/">link.</a> Desta forma a `INFRA, PRESENTERS & REPOSITORIES` vai precisar se adpatar aos casos de uso e nunca o inverso. <p>Permitir que um aplicativo seja igualmente conduzido por usuários, programas, scripts automatizados de teste ou em lote, e seja desenvolvido e testado isoladamente de seus eventuais dispositivos e bancos de dados de tempo de execução.
 <br>
 <br>
 <img width="190" src="https://alistair.cockburn.us/wp-content/uploads/2018/02/Hexagonal-architecture-pic-1-to-4-socket.jpg" ></img>

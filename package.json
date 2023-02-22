@@ -1,0 +1,14 @@
+{
+  "name": "nestjs-and-react-app",
+  "version": "0.1.0",
+  "description": "NestJS and React App",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd back_end && npm run start:dev\" \"cd front_end && npm start\"",
+    "postinstall": "cd back_end && npm i && cd ../front_end && npm i"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

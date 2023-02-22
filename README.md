@@ -15,7 +15,7 @@
 - Exemplo de arquitetura limpa seguindo os conceito do livro Clean Architecture do autor <a href="https://en.wikipedia.org/wiki/Robert_C._Martin"> Robert Cecil Martin.</a>
 </p>
 
-- Requisitos
+- Requisitos/sr
 - - <a href="https://nodejs.org/en/download/">Nodejs </a>
 - - Conexão com internet
 
@@ -37,7 +37,7 @@
 
 <h3>Na Arquitetura limpa temos portas e adaptadores </h3>
 <details>
-EX: Neste projeto o /src/@core/infra/http/express/index.ts é o nosso adpatador e o src/application/...     são nossas portas.
+EX: Neste projeto o //back_end/src@core/infra/http/express/index.ts é o nosso adpatador e o /back_end/srcapplication/...     são nossas portas.
 <summary><a>Ler mais</a>
 </summary>
 <p>Padrões relacionados</p> 
@@ -56,8 +56,8 @@ O padrão MVC foi implementado já em 1974 no projeto Smalltalk. Tem sido dado, 
 ## ENTITIES
 
 - Regras de neǵocio consolidadas
-- - Arquivo com a entidade <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/domain/route.entity.ts"> `/src/@core/domain/route.entity.ts` </a><p> As as regras de negócio, validações</p>
-- - - <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/domain/route.entity.spec.ts"> `/src/@core/domain/route.entity.spec.ts` </a> <p>Todas regras devem ter testes unitários para ser seguro</p>
+- - Arquivo com a entidade <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main//back_end/src@core/domain/route.entity.ts"> `//back_end/src@core/domain/route.entity.ts` </a><p> As as regras de negócio, validações</p>
+- - - <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main//back_end/src@core/domain/route.entity.spec.ts"> `//back_end/src@core/domain/route.entity.spec.ts` </a> <p>Todas regras devem ter testes unitários para ser seguro</p>
 
 - Modelagem de dados
 
@@ -70,7 +70,7 @@ O padrão MVC foi implementado já em 1974 no projeto Smalltalk. Tem sido dado, 
 
 ## USE CASES
 
-- Arquivo com caso de uso [/src/@core/application/create_route.use_case.ts](https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/application/create_route.use_case.ts) <p> O caso de uso, por exemplo os tipos de input e output, obriga informa a entrada de alguns dados cruciais para o funcionamento</p><p>`CreateRouteInput` nesta aplicação é a porta do caso de uso The Pattern: Ports and Adapters (‘’Object Structural’’) como diz no <a href="https://alistair.cockburn.us/hexagonal-architecture/">link.</a> Desta forma a `INFRA, PRESENTERS & REPOSITORIES` vai precisar se adpatar aos casos de uso e nunca o inverso. <p>Permitir que um aplicativo seja igualmente conduzido por usuários, programas, scripts automatizados de teste ou em lote, e seja desenvolvido e testado isoladamente de seus eventuais dispositivos e bancos de dados de tempo de execução.
+- Arquivo com caso de uso [//back_end/src@core/application/create_route.use_case.ts](https://github.com/guilhermeforprojeto/clean_architecture/blob/main//back_end/src@core/application/create_route.use_case.ts) <p> O caso de uso, por exemplo os tipos de input e output, obriga informa a entrada de alguns dados cruciais para o funcionamento</p><p>`CreateRouteInput` nesta aplicação é a porta do caso de uso The Pattern: Ports and Adapters (‘’Object Structural’’) como diz no <a href="https://alistair.cockburn.us/hexagonal-architecture/">link.</a> Desta forma a `INFRA, PRESENTERS & REPOSITORIES` vai precisar se adpatar aos casos de uso e nunca o inverso. <p>Permitir que um aplicativo seja igualmente conduzido por usuários, programas, scripts automatizados de teste ou em lote, e seja desenvolvido e testado isoladamente de seus eventuais dispositivos e bancos de dados de tempo de execução.
 <br>
 <br>
 <img width="190" src="https://alistair.cockburn.us/wp-content/uploads/2018/02/Hexagonal-architecture-pic-1-to-4-socket.jpg" ></img>
@@ -83,9 +83,9 @@ O padrão MVC foi implementado já em 1974 no projeto Smalltalk. Tem sido dado, 
 
 ## INFRA, PRESENTERS & REPOSITORIES
 
-- Arquivo com a infra <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/infra/http/express/index.ts"> `/src/@core/infra/http/express/index.ts` </a><p> A infra, aqui onde vamos usar para passar os dados da requisição da entidade usando os casos de uso</p><p>Utlizamos a extensão `REST Client ->/ @ext:humao.rest-client` para testar o POST na aplicação.</p>
+- Arquivo com a infra <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main//back_end/src@core/infra/http/express/index.ts"> `//back_end/src@core/infra/http/express/index.ts` </a><p> A infra, aqui onde vamos usar para passar os dados da requisição da entidade usando os casos de uso</p><p>Utlizamos a extensão `REST Client ->/ @ext:humao.rest-client` para testar o POST na aplicação.</p>
 - Expres.js
-- - Framework Node, usado para habilitar uma aplicação web e usar a nossa aplicação.<p>Com ele fizemos `GET` & `POST` nas rotas. Arquivo com fontes <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main/src/@core/infra/http/express/index.ts" >aqui</a>
+- - Framework Node, usado para habilitar uma aplicação web e usar a nossa aplicação.<p>Com ele fizemos `GET` & `POST` nas rotas. Arquivo com fontes <a href="https://github.com/guilhermeforprojeto/clean_architecture/blob/main//back_end/src@core/infra/http/express/index.ts" >aqui</a>
 
 </p>
 
